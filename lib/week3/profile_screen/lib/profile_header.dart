@@ -18,7 +18,7 @@ class ProfileHeader extends StatelessWidget {
       children: [
         ClipOval(
           child: Image.asset(
-            'assets/images/me.jpg',
+            'assets/images/me.svg',
             width: 140,
             height: 140,
             fit: BoxFit.cover,
