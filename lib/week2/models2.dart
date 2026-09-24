@@ -28,9 +28,12 @@ mixin Borrowable on LibraryItem {
   }
 }
 
+mixin Total on LibraryItem {
+}
+
 
 // Book
-class Book extends LibraryItem with Borrowable {
+class Book extends LibraryItem with Borrowable, Total{
   final int pages;
   final Author author;
   final Genre genre;

@@ -1,5 +1,6 @@
 import 'models2.dart';
 import 'catalogue.dart';
+import 'models.dart' as m;
 
 void main() {
   final library = Library();
@@ -31,9 +32,9 @@ void main() {
     'title': 'Белгісіз код',
   };
 
-  final book1 = Book.fromJson(rawJson1);
-  final book2 = Book.fromJson(rawJson2);
-  final book3 = Book.fromJson(rawJson3); // pages = 0 болады
+  final book1 = m.Book.fromJson(rawJson1);
+  final book2 = m.Book.fromJson(rawJson2);
+  final book3 = m.Book.fromJson(rawJson3); // pages = 0 болады
 
   final magazine = Magazine(title: 'Tech Magazine', year: 2024, issue: 5);
   final ghost = Ghost(title: 'Ghost Book', year: 1995);
@@ -41,7 +42,7 @@ void main() {
   library.add(book1);
   library.add(book2);
   library.add(book3);
-  
+
   library.add(magazine);
   library.add(ghost);
 
